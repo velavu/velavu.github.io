@@ -49,7 +49,8 @@ $(document).ready(function(){
       greetings: 'Welcome to vel.terminal.me | v31.0, created_on: 29.03.1987',
       name: 'js_demo',
       height: 200,
-      prompt: '$  vel '
+      // prompt: 'vel@~/>$ '
+      prompt: 'vel@~/>$ '
   });
 });
   });
@@ -107,7 +108,7 @@ $(document).ready(function(){
 
 <div class="container">
 
-<nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:20px;">
+<nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">vel.terminal.me</a>
@@ -126,8 +127,9 @@ $(document).ready(function(){
       <li><a href="#">Page 2</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <!-- TODO check why font Awesomeis not working -->
+      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-link"></span> Login</a></li>
     </ul>
   </div>
 </nav>
@@ -141,16 +143,62 @@ $(document).ready(function(){
 				$ vel <span id="typed"></span>
 			</div>
 		</div>
-		<span class="tagline">vel &nbsp;&nbsp;-&nbsp;-&nbsp;help</span>
     <button type="button" id="typed-btn" class="btn btn-info" style="visibility:hidden;">ask my terminal.me</button>
+    <span class="tagline">For more details: `vel &nbsp;&nbsp;-&nbsp;-&nbsp;help`</span>
 	</div>
   <div class="wrap">
 
   </div>
 </div>
-
-  <h3>Inverted Navbar</h3>
-  <p>An inverted navbar is black instead of gray.</p>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="panel panel-inverse">
+            <div class="panel-heading">
+                Category #1
+            </div>
+            <div class="panel-body">
+                <p>Add a category description. Inform recent details added here. Add few tips, what you liked about it etc.</p>
+            </div>
+            <div class="panel-footer">
+                <span class='prompt'><span class='user'>root</span><span class="at">@</span><span class="path">~/visit-page?</span>><span class="caret-terminal">$</span>
+                <span class="typed-cursor">|</span>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-inverse">
+            <div class="panel-heading">
+              News
+            </div>
+            <div class="panel-body">
+                <p>Add a category description. Inform recent details added here. Add few tips, what you liked about it etc.</p>
+            </div>
+            <div class="panel-footer">
+                <span class='prompt'><span class='user'>root</span><span class="at">@</span><span class="path">~/visit-page?</span>><span class="caret-terminal">$</span>
+                <span class="typed-cursor">|</span>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+        <div class="panel panel-inverse">
+            <div class="panel-heading">
+                Tips & Cheatsheet
+            </div>
+            <div class="panel-body">
+                <p>
+                  Add a category description. Inform recent details added here. Add few tips, what you liked about it etc.
+                </p>
+            </div>
+            <div class="panel-footer">
+                <span class='prompt'><span class='user'>root</span><span class="at">@</span><span class="path">~/visit-page?</span>><span class="caret-terminal">$</span>
+                <span class="typed-cursor">|</span>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-4 -->
+</div>
 </div>
 </body>
 </html>

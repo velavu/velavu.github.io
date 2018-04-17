@@ -230,3 +230,46 @@ code {
         color: #CCC; }
 
 /*# sourceMappingURL=main.css.map */
+
+.panel-inverse {
+  border-color: #ddd;
+}
+.panel-inverse > .panel-footer {
+  color: #fff;
+  background-color: #222;
+  border-color: #ddd;
+}
+.panel-inverse > .panel-heading {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.panel-inverse > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+.panel-inverse > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+.panel-inverse > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+.user {
+	// color: #30DF50;
+	color: #ea7e7d;
+	letter-spacing: 0.002em;
+	padding-right: 3px;
+}
+.at {
+	// color: #E47E7D;
+	color: #e8d880;
+	padding-right: 2px;
+}
+.path {
+	// color: #70CDED;
+	color: #7ecdcb;
+	letter-spacing: 0.002em;
+	padding-right: 2px;
+}
+.caret-terminal {
+	color: #50cd70;
+}

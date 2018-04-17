@@ -454,7 +454,7 @@ terminal .terminal-output > div {
 }
 @supports (--css: variables) {
     .terminal, .cmd {
-        color: var(--color, #aaa);
+        color: var(--color, #fff);
 
         /* TODO me make it transparent
         background-color: var(--background, #000); */
@@ -472,7 +472,7 @@ terminal .terminal-output > div {
         display: inline-block;
     }
     .terminal, .cmd, .terminal .terminal-output > div > div, .cmd .prompt {
-        font-size: calc(var(--size, 1) * 12px);
+        font-size: calc(var(--size, 1) * 13px);
         line-height: calc(var(--size, 1) * 14px);
     }
     .terminal .terminal-output > div > div {
