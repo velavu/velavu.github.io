@@ -27,6 +27,8 @@ $(document).ready(function(){
   console.log("Loading Completed");
   $("#typed-btn").click(function(){
     console.log("Click event");
+    var termHeight = $(".terminal-height");
+    termHeight.html("80px");
     jQuery(function($, undefined) {
 
     $('#typed-parent').html('<span id="typed"></span>');
@@ -60,11 +62,15 @@ $(document).ready(function(){
 
 		$("#typed").typed({
 			strings: [
-        "who",
-        // "likes",
+        "about-me",
+        "interests",
         // "school",
-        // "profession",
-        "more"
+        "education",
+        "education school",
+        "education college",
+        "profession",
+        "more",
+        "--help"
       ],
 			typeSpeed: 50,
 			backSpeed: 100,
@@ -111,26 +117,45 @@ $(document).ready(function(){
 <nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
       <a class="navbar-brand" href="#">vel.terminal.me</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <!-- TODO check why font Awesomeis not working -->
-      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> email </a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-link"></span> repos </a></li>
-    </ul>
+    <div id="navbar" class="navbar-collapse collapse">
+
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Developer
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Python, PHP, Perl</a></li>
+            <li><a href="#">Web Technologies</a></li>
+            <li><a href="#">Databases</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">DevOps
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">AWS</a></li>
+            <li><a href="#">Docker</a></li>
+            <li><a href="#">Kubernetes</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Interests</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- TODO check why font Awesomeis not working -->
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> email </a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-link"></span> repos </a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
